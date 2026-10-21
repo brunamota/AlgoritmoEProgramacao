@@ -10,7 +10,7 @@ Todo sistema computacional, do mais simples ao mais complexo, opera sob o princ�
 - **Processamento:** Realização de cálculos, comparações e tomada de decisões.
 - **Saída:** Informação dos resultados finais gerados.  
 
-## Eficácia vs. Eficiência
+### Eficácia vs. Eficiência
 
 Um algoritmo pode funcionar (ser eficaz), mas gastar recursos desnecessários (ineficiente). Ao desenvolver uma solução, dois conceitos são cruciais:
 
@@ -57,7 +57,7 @@ Mostrar como o pseudocódigo anterior se transforma em blocos:
 
 ## 3. Variáveis, Tipos de Dados e Estrutura do Pseudocódigo
 
-**O que são Variáveis?**
+### **O que são Variáveis?**
 Uma variável representa um espaço reservado na memória principal do computador para guardar um valor temporário durante o processamento,  ou seja, variáveis são espaços reservados na memória RAM para guardar valores durante o **processamento**. Cada variável armazena apenas um valor por vez; ao receber um novo dado, o valor anterior é permanentemente apagado.
 
 Os dados que preenchem essas variáveis são classificados em tipos simples:
