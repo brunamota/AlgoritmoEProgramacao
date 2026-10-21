@@ -1,6 +1,6 @@
 # Algoritmos de Programação: Introdução, Pseudocódigo e Fluxogramas
 
-## Fundamentos e a Lógica do Cotidiano
+## 1.Fundamentos e a Lógica do Cotidiano
 
 Um algoritmo é uma sequência finita de operações que, quando executadas na ordem estabelecida, atingem um objetivo determinado em um tempo finito. Para ser válido e processável, um algoritmo deve possuir um estado inicial, ações claras e precisas, saídas corretas e um estado final previsível (ele deve sempre terminar).
 
@@ -29,53 +29,7 @@ Uma receita tradicional indica: ligar o fogão, separar os ingredientes, quebrar
 * Saídas corretas;
 * Estado final previsível.
 
----
-
-## Variáveis, Tipos de Dados e Estrutura do Pseudocódigo
-
-**O que são Variáveis?**
-Uma variável representa um espaço reservado na memória principal do computador para guardar um valor temporário durante o processamento,  ou seja, variáveis são espaços reservados na memória RAM para guardar valores durante o **processamento**. Cada variável armazena apenas um valor por vez; ao receber um novo dado, o valor anterior é permanentemente apagado.
-
-Os dados que preenchem essas variáveis são classificados em tipos simples:
-* `inteiro`: Armazena apenas valores numéricos inteiros (ex: 10, -5).
-* `real`: Armazena valores numéricos fracionários (ex: 3.14, -0.5).
-* `caractere`: Armazena um único caractere alfanumérico ou símbolo.
-* `string`: Armazena cadeias de texto, como palavras ou frases completas.
-* `lógico`: Armazena apenas dois estados, verdadeiro ou falso.
-
-## A Estrutura Formal de um Pseudocódigo
-
-A pseudolinguagem padroniza a lógica de programação utilizando termos em português antes de transcrevermos o código para linguagens reais (como C, Python ou Java). A estrutura obrigatória é composta por:
-1. **Cabeçalho:** Inicia com a palavra Algoritmo seguida do nome do programa e um comentário curto {entre chaves} descrevendo seu objetivo.
-2. ** Seção de Declarações:** Todas as variáveis devem ser declaradas antes do uso, organizadas por finalidade:
-  * `Entradas`: Variáveis que receberão dados do usuário.
-  * `Saídas`: Variáveis que guardarão o resultado a ser exibido.
-  * `Variáveis auxiliares`: Variáveis que guardam cálculos temporários (invisíveis ao usuário final).
-3.** Área de Comandos: **Todo o processamento lógico ocorre obrigatoriamente entre as palavras delimitadoras início e fim. Cada comando ocupa uma linha isolada.
-4. **Comentários:** Utilização de chaves `{ }` para documentar os passos.
-
-### Exemplo Prático: Cálculo de Média de Três Notas
-*Apresentação da estrutura completa em pseudolinguagem.*
-
-```text
-Algoritmo CalculoMedia
-{LÊ TRÊS NOTAS, EXIBE AS NOTAS, CALCULA E INFORMA A SOMA E A MÉDIA}
-
-Entradas: nota1, nota2, nota3 (real)
-Saídas: soma, media (real)
-
-início
-  ler (nota1, nota2, nota3)       {OBTÉM AS 3 NOTAS VIA TECLADO}
-  escrever (nota1, nota2, nota3)  {IMPRIME AS NOTAS NA TELA PARA VERIFICAÇÃO}
-  soma <- nota1 + nota2 + nota3   {PROCESSAMENTO: CALCULA A SOMA TOTAL}
-  escrever (soma)                 {IMPRIME A SOMA}
-  media <- soma / 3               {PROCESSAMENTO: CALCULA A MÉDIA ARITMÉTICA}
-  escrever (media)                {IMPRIME A MÉDIA FINAL}
-fim
-```
----
-
-## Representação Visual: Modelagem com Fluxogramas
+## 2. Representação Visual: Modelagem com Fluxogramas
 
 ### O que é um Fluxograma?
 O fluxograma é uma representação gráfica que mapeia a sequência de ações do algoritmo. Essa etapa visualiza claramente desvios lógicos e valida a sequência das instruções antes da codificação formal.
@@ -101,9 +55,49 @@ Mostrar como o pseudocódigo anterior se transforma em blocos:
 7. `Paralelogramo`: SAÍDA média
 8. `Elipse`: Fim
 
----
+## 3. Variáveis, Tipos de Dados e Estrutura do Pseudocódigo
 
-## Análise de Algoritmos e Detecção de Falhas
+**O que são Variáveis?**
+Uma variável representa um espaço reservado na memória principal do computador para guardar um valor temporário durante o processamento,  ou seja, variáveis são espaços reservados na memória RAM para guardar valores durante o **processamento**. Cada variável armazena apenas um valor por vez; ao receber um novo dado, o valor anterior é permanentemente apagado.
+
+Os dados que preenchem essas variáveis são classificados em tipos simples:
+* `inteiro`: Armazena apenas valores numéricos inteiros (ex: 10, -5).
+* `real`: Armazena valores numéricos fracionários (ex: 3.14, -0.5).
+* `caractere`: Armazena um único caractere alfanumérico ou símbolo.
+* `string`: Armazena cadeias de texto, como palavras ou frases completas.
+* `lógico`: Armazena apenas dois estados, verdadeiro ou falso.
+
+### A Estrutura Formal de um Pseudocódigo
+
+A pseudolinguagem padroniza a lógica de programação utilizando termos em português antes de transcrevermos o código para linguagens reais (como C, Python ou Java). A estrutura obrigatória é composta por:
+1. **Cabeçalho:** Inicia com a palavra Algoritmo seguida do nome do programa e um comentário curto {entre chaves} descrevendo seu objetivo.
+2. **Seção de Declarações:** Todas as variáveis devem ser declaradas antes do uso, organizadas por finalidade:
+  * `Entradas`: Variáveis que receberão dados do usuário.
+  * `Saídas`: Variáveis que guardarão o resultado a ser exibido.
+  * `Variáveis auxiliares`: Variáveis que guardam cálculos temporários (invisíveis ao usuário final).
+3. **Área de Comandos:** Todo o processamento lógico ocorre obrigatoriamente entre as palavras delimitadoras início e fim. Cada comando ocupa uma linha isolada.
+4. **Comentários:** Utilização de chaves `{ }` para documentar os passos.
+
+### Exemplo Prático: Cálculo de Média de Três Notas
+
+```text
+Algoritmo CalculoMedia
+{LÊ TRÊS NOTAS, EXIBE AS NOTAS, CALCULA E INFORMA A SOMA E A MÉDIA}
+
+Entradas: nota1, nota2, nota3 (real)
+Saídas: soma, media (real)
+
+início
+  ler (nota1, nota2, nota3)       {OBTÉM AS 3 NOTAS VIA TECLADO}
+  escrever (nota1, nota2, nota3)  {IMPRIME AS NOTAS NA TELA PARA VERIFICAÇÃO}
+  soma <- nota1 + nota2 + nota3   {PROCESSAMENTO: CALCULA A SOMA TOTAL}
+  escrever (soma)                 {IMPRIME A SOMA}
+  media <- soma / 3               {PROCESSAMENTO: CALCULA A MÉDIA ARITMÉTICA}
+  escrever (media)                {IMPRIME A MÉDIA FINAL}
+fim
+```
+
+## 4. Análise de Algoritmos e Detecção de Falhas
 
 A construção lógica exige coerência entre os dados lidos e os processados. Analisar um algoritmo envolve buscar erros comuns que impedem a eficácia do sistema.
 
